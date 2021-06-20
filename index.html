@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+	<title>Kalkulator MHR</title>
+	<meta name="description" content="Kalkulator MHR" />
+	<meta name="keywords" content="kalkulator MHR,MHR,kalkulator" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<script type="text/javascript" src="kalkulatorMHR.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<center><h1>KALKULATOR - MHR</h1></center>
+		
+	<h2>Maksymalne tętno:</h2>
+	<p class="just">
+		Tętno maksymalne często zapisywane jest jako HRmax lub MHR. To skrót od angielskiej nazwy, która oznacza maximal heart rate. Co mamy na myśli mówiąc o tętnie maksymalnym? To najwyższa częstotliwość, z którą może bić serce człowieka. Jeszcze prościej, tętno maksymalne to ten moment, kiedy podczas treningu dałeś z siebie absolutnie wszystko. Tętno maksymalne osiągasz w szczycie swoich możliwości.
+		<br>
+		Wiele osób przekonuje, że im jesteśmy starsi, tym nasze tętno maksymalne powoli spada. Jednak, jeśli będziemy regularnie uprawiać sport, nie musi tak być. Wszystko zależy od nas samych, naszej motywacji, kondycji i oczywiście o stanu zdrowia. Na dobrą sprawę w tej chwili odchodzi się od stwierdzenia, że tętno maksymalne jest najwyższe w młodym wieku. Nie raz, nie dwa zdarzyło się, że to osoby powszechnie uważane za te w podeszłym wieku miały znacznie wyższe tętno maksymalnie niż osoby o połowę od nich młodsze. Nie bez znaczenia jest tu także styl życia, sposób żywienia czy stosowanie bądź nie używek.
+	</p>
+		
+	<h2>Strefy tętna - bieganie kalkulator:</h2>
+	<p class="just">
+		Strefy tętna pomagają wyznaczyć optymalną wartość tętna podczas ćwiczeń aerobowych, czyli także biegania. Jedne strefy treningowe pomagają szybciej spalać tkankę tłuszczową, inne poprawiają kondycję. A strefy treningowe to nic innego jak procentowe przedziały tętna maksymalnego, w których powinniśmy ćwiczyć w zależności oczywiście od celu treningu.
+		<br>
+		Ważne, aby wiedzieć, że wyróżniamy aż pięć stref treningowych. W każdej z nich w organizmie zachodzą zupełnie inne przemiany energetyczne, sprzyjające albo redukcji tkanki tłuszczowej albo poprawie wydolności organizmu.
+	</p>
+		
+	<center>
+	<h2>Tutaj możesz obliczyć swoje maksymalne tętno:</h2>
+	<p>W pierwszym polu podaj swój wiek, w drugim wagę (w kilogramach) i określ płeć. Kalkulator obliczy Twoje MHR.</p>
+		
+	<input type="text" id = "wiek" value = 0 >
+	<input type="text" id = "waga" value = 0 >
+		
+	<button onclick="kobieta()">Oblicz dla kobiety:</button>
+	<button onclick="mezczyzna()">Oblicz dla mężczyzny:</button>
+	<br><br><br>
+	<div id="wynik" class="div"></div>
+		
+	<h2>Tutaj możesz określić dla siebie strefę tętna:</h2>
+	<p>Podaj swoje MHR.</p>
+		
+	<input type="text" id = "MHR" value = 0 >
+	<button onclick="strefa()">Oblicz: </button>
+	<br><br><br>	
+	<div id="strefa1" class="div"></div>
+	<div id="strefa2" class="div"></div>
+	<div id="strefa3" class="div"></div>
+	<div id="strefa4" class="div"></div>
+	<div id="strefa5" class="div"></div>
+	</center>
+	<p class="just">
+		Poniżej przedstawiamy charakterystykę poszczególnych stref tętna, które pozwolą między innymi odpowiedzieć na pytanie jakie tętno podczas biegu.
+	</p>
+		
+	<h2>Strefa I (50-60% MHR) – strefa regeneracji:</h2>
+	<p class="just">
+		Strefa I jest dedykowana treningom o małej intensywności. Celem treningu jest poprawa kondycji fizycznej. Taka wysokość tętna maksymalnego jest zalecana osobom początkującym, o słabej kondycji i z nadwagą. Tempo treningu można porównać do marszu.
+	</p>
+		
+	<h2>Strefa II (60-70% MHR) – strefa spalania tłuszczu:</h2>
+	<p class="just">
+		Tu mamy do czynienia z treningiem o średniej intensywności. Świetnie nadaje się on do spalania tkanki tłuszczowej i podnoszenia wydolności organizmu. Tempo można przyrównać do truchtu.  
+	</p>
+		
+	<h2>Strefa III (70-80% MHR) – strefa poprawy wydolności sercowo-naczyniowej:</h2>
+	<p class="just">
+		To dość szybkie tempo treningu. Idealnie sprawdzi się jako forma poprawy wydolności układu krążenia, oddechowego i całego organizmu. Strefę III polecamy osobom o dobrej kondycji, które chcą poprawić swoje rezultaty. Sprawdzi się więc jako treningu dla biegaczy, więc tutaj mamy odpowiedź na pytanie – jakie tętno podczas biegu.
+	</p>
+		
+	<h2>Strefa IV (80-90% MHR) – strefa przejścia do przemian beztlenowych (anaerobowych):</h2>
+	<p class="just">
+		W tej strefie tętno jest naprawdę wysokie. Kończy się trening aerobowy, zaczyna anaerobowy, czyli bez udziału tlenu. To trening przeznaczony raczej dla zawodowców, którym zależy na poprawie wyników.
+	</p>
+		
+	<h2>Strefa V (powyżej 90% MHR):</h2>
+	<p class="just">
+		Trening wyłącznie dla zawodowców. Kwas mlekowy w mięśniach powstaje bardzo szybko, dlatego treningi w tym przedziale szybko nas męczą. Są też bardzo krótkie. Ich celem jest poprawa wytrzymałości.
+	</p>
+	
+	<center><strong class="div">
+		<a href="https://myfitness.gazeta.pl/myfitness/7,166737,25048733,tetno-maksymalne-co-to-jest-tetno-maksymalne-jak-obliczyc.html" target="_blank">Informacje zostały zaczerpnięte ze strony: </a>
+	</strong></center>
+	
+</body>
+</html>
